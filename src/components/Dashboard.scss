@@ -1,0 +1,46 @@
+@use '../assets/_partials' as *;
+
+.details{
+    &__title{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        padding-top:2rem;
+        @include tablet{
+            margin-left: 3rem;
+        }
+    }
+    &__input{
+        width: 18rem;
+        height: 3rem;
+        margin: 1rem auto 2rem auto;
+        padding-left: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid black;
+        display: block;
+        @include tablet{
+            width: 42.5rem;
+        }
+    }
+    &__signout{
+        display: block;
+        margin: 2.5rem auto 1rem auto;
+        text-align: center;
+        padding-top:0.65rem;
+        width: 10rem;
+        height: 3rem;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    &__signout:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+    }
+}
+
+

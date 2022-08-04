@@ -1,0 +1,56 @@
+@use '../../assets/partials' as *;
+
+.coin{
+    display: flex;
+    justify-content: center;
+    &__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      height:5rem;
+      border-bottom: 1px solid #d7d7d7;
+      width: 56rem;
+    }
+    &__each {
+      display: flex;
+      align-items: center;
+      padding-right: 1.5rem;
+      min-width: 18rem;
+    }
+    &__text{
+      text-transform: uppercase;
+    }
+    &__data {
+      display: flex;
+      text-align: right;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &__price{
+      width: 6.5rem;
+    }
+    &__volume{
+      width: 10rem;
+    }
+    &__red{
+      color: #f00606;
+      padding-left:2.5rem;
+    }
+    &__green{
+      color: #11d811;
+      padding-left:2.5rem;
+    }
+    &__marketcap{
+      width: 14rem;
+    }
+    &__name{
+      font-size: 1rem;
+      width: 9rem;
+    }
+    &__pic{
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 0.7rem;
+    }
+  }

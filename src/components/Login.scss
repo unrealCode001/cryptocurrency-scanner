@@ -1,0 +1,74 @@
+@use '../assets//partials' as *;
+
+.login{
+    &__form{
+        background-size: cover;
+        border-radius: 5px;
+        background-color: white;
+        width: 20rem;
+        height: 20rem;
+        padding-top:3rem;
+        padding-left:1rem;
+        margin-top: 8rem;
+        margin-left:auto;
+        margin-right:auto;
+        @include tablet{
+            border:1px solid rgba(0,0,0,0.2);
+            box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.2);
+            margin-bottom: 10rem;
+        }
+    }
+    &__user{
+        font-weight: bold;
+    }
+    &__user-input{
+        width:18rem;
+        height:2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom:0.5rem;
+        border-radius: 5px;
+        border: 1px solid black
+    }
+    &__pass{
+        font-weight: bold;
+    }
+    &__pass-input{
+        width:18rem;
+        height:2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom:0.5rem;
+        border-radius: 5px;
+        border: 1px solid black
+    }
+    &__buttons{
+        margin-top: 0.5rem;
+        cursor: pointer;
+    }
+    &__login{
+        width: 5rem;
+        height: 2.5rem;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    &__login:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+    }
+    &__register{
+        width: 5rem;
+        height: 2.5rem;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-right: 0.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    &__register:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+    }
+}
